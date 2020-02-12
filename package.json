@@ -1,0 +1,23 @@
+{
+  "name": "mconf-live-test",
+  "version": "1.0.0",
+  "description": "Mconf test suite",
+  "main": "run.js",
+  "scripts": {
+    "start": "node run.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrobmarin/mconf-live-test.git"
+  },
+  "author": "Pedro Beschorner Marin <pedrobmarin@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrobmarin/mconf-live-test/issues"
+  },
+  "homepage": "https://github.com/pedrobmarin/mconf-live-test#readme",
+  "dependencies": {
+    "bigbluebot": "^1.2.9"
+  }
+}

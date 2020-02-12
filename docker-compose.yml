@@ -1,0 +1,29 @@
+version: '2.2'
+
+services:
+  browserless:
+    image: browserless/chrome
+    container_name: browserless
+    healthcheck:
+      test: curl -s http://localhost:3000 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    networks:
+      - endpoint
+
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: bot
+    depends_on:
+      - browserless
+    env_file:
+      - bot.env
+    networks:
+      - endpoint
+
+networks:
+  endpoint:
+    driver: bridge
