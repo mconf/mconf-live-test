@@ -4,6 +4,8 @@ services:
   browserless:
     image: browserless/chrome
     container_name: browserless
+    env_file:
+      - browserless.env
     healthcheck:
       test: curl -s http://localhost:3000 >/dev/null; if [[ $$? == 52 ]]; then echo 0; else echo 1; fi
       interval: 30s
