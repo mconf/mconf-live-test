@@ -4,7 +4,6 @@ ADD . app
 
 WORKDIR app
 
-RUN npm install \
-  && npm cache clear --force
+RUN npm install && npm cache clear --force
 
 CMD ["npm", "start"]
