@@ -1,13 +1,35 @@
-const bigbluebot = require('bigbluebot')
+const bigbluebot = require('bigbluebot');
 
 let actions = async page => {
-  await bigbluebot.audio.modal.listen(page)
-  await bigbluebot.video.join(page)
-  await bigbluebot.audio.leave(page)
-  await bigbluebot.audio.modal.microphone(page)
-  await bigbluebot.audio.mute(page)
-  await bigbluebot.chat.send(page)
-  await bigbluebot.audio.unmute(page)
+  // Joins listen only audio
+  await bigbluebot.audio.modal.listen(page);
+
+  // Joins video
+  await bigbluebot.video.join(page);
+
+  // Shares screenshare
+  await bigbluebot.screenshare.share(page);
+
+  // Leaves listen only audio
+  await bigbluebot.audio.leave(page);
+
+  // Joins microphone audio
+  await bigbluebot.audio.modal.microphone(page);
+
+  // Mutes microphone
+  await bigbluebot.audio.mute(page);
+
+  // Send chat messages
+  await bigbluebot.chat.send(page);
+
+  // Unmutes microphone audio
+  await bigbluebot.audio.unmute(page);
+
+  // Unshares screenshare
+  await bigbluebot.screenshare.unshare(page);
+
+  // Leaves microphone audio
+  await bigbluebot.audio.leave(page);
 }
 
-bigbluebot.run(actions)
+bigbluebot.run(actions);
