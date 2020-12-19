@@ -12,7 +12,6 @@
     "url": "git+https://github.com/pedrobmarin/mconf-live-test.git"
   },
   "author": "Pedro Beschorner Marin <pedrobmarin@gmail.com>",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/pedrobmarin/mconf-live-test/issues"
   },
