@@ -1,6 +1,6 @@
 # mconf-live-test
 
-Runs automated tests in a mconf-live instance using bigbluebot (https://github.com/mconf/bigbluebot) over browserless (https://www.browserless.io).
+Runs automated tests in a mconf-live/bigbluebutton instance using bigbluebot (https://github.com/mconf/bigbluebot) over browserless (https://www.browserless.io).
 
 ## setup
 
