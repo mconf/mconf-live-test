@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/pedrobmarin/mconf-live-test#readme",
   "dependencies": {
-    "bigbluebot": "^1.4.0"
+    "bigbluebot": "^2.0.0"
   }
 }
