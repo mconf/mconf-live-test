@@ -1,6 +1,6 @@
 {
   "name": "mconf-live-test",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Mconf test suite",
   "main": "run.js",
   "scripts": {
@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/pedrobmarin/mconf-live-test#readme",
   "dependencies": {
-    "bigbluebot": "^2.0.0"
+    "bigbluebot": "^2.1.0"
   }
 }
